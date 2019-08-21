@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="@color/putih"
     android:gravity="center"
     android:layout_height="match_parent"
     tools:context=".SplashScreen">
@@ -13,6 +14,7 @@
     <TextView
         android:id="@+id/tvGuest"
         android:textSize="50sp"
+        android:textColor="@color/abu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Guest"/>
@@ -24,6 +26,7 @@
         android:layout_below="@+id/tvGuest"
         android:src="@drawable/guest"/>
     <TextView
+        android:textColor="@color/abu"
         android:id="@+id/tvBook"
         android:layout_below="@+id/tvGuest"
         android:layout_toRightOf="@+id/imgView"
@@ -31,5 +34,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Book"/>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicatorName="BallScaleMultipleIndicator"
+        android:layout_below="@id/tvBook"
+        app:indicatorColor="@color/abu"/>
 </RelativeLayout>
 </LinearLayout>
